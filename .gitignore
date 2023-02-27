@@ -1,0 +1,36 @@
+# anew
+.c9
+.idea
+node_modules
+
+<<<<<<< HEAD
+#environment files
+=======
+# environment files
+.env
+
+# nodejs node_modules
+node/**/node_modules
+<<<<<<< HEAD
+node/**/package-lock.json
+node/**/node_modules
+node/config/pool.js
+node/config/db_config.json
+node/**/uploadedFiles
+
+#mongodb backup /json
+mongodb/**/*.json
+mongodb/backup
+
+python/**/.venv
+
+
+=======
+
+# mongodb backup / json
+mongodb/**/*.json
+
+mongodb/backup
+
+# react App
+react/**/node_modules

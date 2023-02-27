@@ -1,0 +1,15 @@
+use test
+db.emp.count()
+<<<<<<< HEAD
+db.emp.find({depno:30},{_id:0. ename:1, depno:1})
+=======
+db.emp.find({depno:30},{_id:0, ename:1, depno:1})
+>>>>>>> e0096d113df2eeb29a9e1019698c735ffb1c7425
+
+db.emp.update(
+    {depno:{$eq:30}},
+    {$set:{depno:40}},
+    {multi:true}
+)
+
+db.emp.find({depno:40},{_id:0, ename:1, depno:1})

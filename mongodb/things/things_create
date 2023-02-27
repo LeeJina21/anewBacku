@@ -1,0 +1,20 @@
+use test
+db.things.drop()
+
+<<<<<<< HEAD
+m={ename : "smith"}
+n={empno : 1101}
+=======
+m={ename:"smith"}
+n={empno:1101}
+>>>>>>> e0096d113df2eeb29a9e1019698c735ffb1c7425
+db.things.save(m)
+db.things.save(n)
+db.things.find()
+
+db.things.insert ({empno:1102, ename:"King"})
+db.things.find()
+
+for(var n=1103; n<=1120; n++) db.things.save({n:n, m:"test"})
+db.things.find()
+it

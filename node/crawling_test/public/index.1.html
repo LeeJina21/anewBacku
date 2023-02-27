@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crawling Auto System</title>
+    <link rel="stylesheet" href="css.css?after" type="text/css">
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    function doAction() {
+      alert("DB에 저장되었습니다");
+    }  
+    
+    document.getElementsByClassName("").style.color = "#fff";
+    </script>
+    
+</head>
+<body style="white:100%;">
+    <div id="div_B"></div>
+    <div class="left">
+    
+    <!--<button class="button" onclick="">API</button>-->
+    <!--<button class="button">Web</button>-->
+    <p style="margin-left:10px;">태그입력</p>
+    <div style="margin: 30px 0 0px 0;"></div>
+    <!--체크박스-->
+    <div class="checkBoxGroup">
+    <form method="post" name="dataForm" target='targetURL' action='' >
+        BaseURL : <input type="text" name=baseUrl></input>
+        <div style="margin: 20px 0 0px 0;"></div>
+
+        <!--1-->
+        <input class="checkbox" type="checkbox" name="A1" value="true"></input>
+        <input class="checkbox_hidden" type="hidden" name="A1" value="false"></input>
+        
+        <select name="B1">
+            <option value="none">find선택</option>
+            <option value="find_elements">find_elements</option>
+            <option value="find_element">find_element</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C1"></input>
+        <input class="checkbox" type="checkbox" name="D1" value="true"></input>
+        
+        <select name="E1">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F1">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G1">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H1">
+        <div style="margin: 20px 0 0px 0;"></div>
+        
+        <!--2-->
+        <input class="checkbox" type="checkbox" name="A2" value="true" >
+        <input class="checkbox_hidden" type="hidden" name="A2" value="false"></input>
+       
+        <select name="B2">
+            <option value="none">select선택</option>
+            <option value="select">select</option>
+            <option value="select_one">select_one</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C2"></input>
+        <input class="checkbox" type="checkbox" name="D2" value="true"></input>
+        
+        <select name="E2">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F2">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G2">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H2">
+        <div style="margin: 20px 0 0px 0;"></div>
+        
+        <!--3-->
+        <input class="checkbox" type="checkbox" name="A3" value="true"  >
+        <input class="checkbox_hidden" type="hidden" name="A3" value="false"  >
+        
+        <select name="B3">
+            <option value="none">select선택</option>
+            <option value="select">select</option>
+            <option value="select_one">select_one</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C3"></input>
+        <input class="checkbox" type="checkbox" name="D3" value="true"></input>
+        
+        <select name="E3">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F3">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G3">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H3">
+        <div style="margin: 20px 0 0px 0;"></div>
+        
+        <!--4-->
+        <input class="checkbox" type="checkbox" name="A4" value="true"  >
+        <input class="checkbox_hidden" type="hidden" name="A4" value="false"  >
+        
+        <select name="B4">
+            <option value="none">select선택</option>
+            <option value="select">select</option>
+            <option value="select_one">select_one</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C4"></input>
+        <input class="checkbox" type="checkbox" name="D4" value="true" ></input>
+        
+        <select name="E4">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F4">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G4">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H4">
+        <div style="margin: 20px 0 0px 0;"></div>
+        
+        <!--5-->
+        <input class="checkbox" type="checkbox" name="A5" value="true">
+        <input class="checkbox_hidden" type="hidden" name="A5" value="false"></input>
+        
+        <select name="B5">
+            <option value="none">select선택</option>
+            <option value="select">select</option>
+            <option value="select_one">select_one</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C5"></input>
+        <input class="checkbox" type="checkbox" name="D5" value="true"></input>
+        <!--<input class="checkbox_hidden" type="hidden" name="checkDatatype5" value="false" ></input>-->
+
+        <select name="E5">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F5">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G5">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H5">
+        <div style="margin: 20px 0 0px 0;"></div>
+        
+        <!--6-->
+        <input class="checkbox" type="checkbox" name="A6" value="true">
+        <input class="checkbox_hidden" type="hidden" name="A6" value="false"></input>
+        
+        <select name="B6">
+            <option value="none">select선택</option>
+            <option value="select">select</option>
+            <option value="select_one">select_one</option>
+        </select> 
+        <input class="tagName" placeholder="tag 입력" name="C6"></input>
+        <input class="checkbox" type="checkbox" name="D6" value="true"></input>
+        <!--<input class="checkbox_hidden" type="hidden" name="checkDatatype5" value="false" ></input>-->
+
+        <select name="E6">
+            <option value="none">타입선택</option>
+            <option value="int">Int</option>
+            <option value="string">String</option>
+            <option value="utf-8">UTF-8</option>
+        </select>
+        <select name="F6">
+            <option value="none">Id,class선택</option>
+            <option value="#">Id</option>
+            <option value=".">class</option>
+        </select>
+        <input class="idClassName" placeholder="id 또는 class" name="G6">
+        <input class="idClassName" placeholder="자식 id 또는 class" name="H6">
+        <div style="margin: 40px 0 0px 0;"></div>
+        
+        
+        <button id="buttonData" class="button" type='submit' name='buttonData' formaction='/data' onClick="setTimeout('window.location.reload()',2000)">데이터저장</button>
+    <div class="iframe_div">
+        <iframe style="display:none;" name="targetURL" class="iframe-preview" src="http://54.180.178.89:3000/data" allowTransparency="true"></iframe>
+    </div>
+</form>
+</div>
+
+
+<!--크롤링코드-->
+
+    <div style="margin: 20px 0 0px 0;"></div>
+    <p>크롤링코드</p>
+    <div style="margin: 20px 0 0px 0;"></div>
+    <iframe name="targetURL" id="thanIf" class="iframe-preview " src="http://54.180.178.89:3000/thanCode"
+        style="width:868px; height: 160px; border: 1px solid black; scrollbar-highlight-color:#FFFFFF;" allowTransparency="true"></iframe>
+
+    <div style="margin: 20px 0 0px 0;"></div>
+
+<!--크롤링코드 끝-->
+
+<!--파이썬코드생성, 파일저장, 실행-->
+<form method="post" name="formName" target='targetURL'>
+    <div class="threeButtons">
+        <input class="pyName" type="text" name="namePy"> .py</input>
+        <button class="saveButton button" formaction="/save">저장</button>
+        <button class="runButton button" formaction="/execution" type="submit" onClick="setTimeout('window.location.reload()',14000)">실행</button>
+    </div>
+ </div>
+    <div class="right">
+        <p style="margin-top: 28px;">HTML</p>
+        <iframe name="targetURL" id='htmlSee' class="iframe-preview dataBox" src="http://54.180.178.89:3000/htmlSee"
+        style="width:850px; height: 250px; border: 1px solid black; margin: 30px 0 0px 0;" allowTransparency="true"  scrolling="auto"></iframe>
+        <p >크롤링 결과</p>
+        <div style="margin: 20px 0 0px 0;"></div>
+        <iframe name="resultURL" class="iframe-preview codeBox" src="http://54.180.178.89:3000/pythonResultSee"
+        style="width:850px; height: 250px; border: 1px solid black;" allowTransparency="true"  scrolling="auto"></iframe>
+        <div style="margin: 20px 0 0px 0;"></div>
+        <div class="file">
+            <!--<button class="fileSaveButton button" formaction="/pythonResultSee" onlick="">결과 확인</button>-->
+            <input type='button' class="fileSaveButton button" value="결과 확인" onclick='document.resultURL.location.href="/pythonResultSee?namePy="+document.formName.namePy.value'/>
+            <button class="fileSaveButton button" formaction="/fileSave" onlick="">파일 저장</button>
+            <button class="fileSaveButton button" formaction="/DBstorage" onclick="doAction()">DB 저장</button>
+        </div>    
+    </div>
+</form>
+<!--파이썬코드생성, 파일저장, 실행 끝-->
+    
+</body>
+</html>
+
+
+
+
+
